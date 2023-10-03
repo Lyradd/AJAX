@@ -1,6 +1,6 @@
 function searchWeather() {
-  const cityInput = document.getElementById("kota").value;
-  getWeather(cityInput);
+  const kota = document.getElementById("kota").value;
+  getWeather(kota);
 }
 
 function getWeather(city) {
@@ -17,7 +17,7 @@ function getWeather(city) {
         const temperature = Math.round(response.main.temp - 273);
         const description = response.weather[0].description;
         weatherDetails.innerHTML = `<p>Temperatur: ${temperature}°C</p>
-        <p>Deskripsi: ${description}</p>`;
+          <p>Deskripsi: ${description}</p>`;
         weatherDetails.style.display = "block";
       } else {
         console.error(

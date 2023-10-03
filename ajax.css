@@ -40,5 +40,5 @@ body {
 }
 
 .weather-details {
-  display: none; /* Sembunyikan informasi cuaca secara awal */
+  display: none;
 }
